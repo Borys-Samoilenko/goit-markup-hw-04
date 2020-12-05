@@ -304,6 +304,11 @@ a {
   letter-spacing: 0.03em;
 }
 
+ul.teammate-social {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
 .teammate-list {
   display: flex;
 }
@@ -336,26 +341,6 @@ a {
   border-radius: 0px 0px 4px 4px;
 }
 
-.teammate-social {
-  display: flex;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-
-.teammate-social li {
-  width: 44px;
-  height: 44px;
-  margin-right: 10px;
-  list-style: none;
-  fill: #afb1b8;
-  border-radius: 50%;
-  /* border: slateblue; */
-  padding: 12.54px;
-}
-
-.teammate-social li:last-child {
-  margin-right: 0px;
-}
 .photo {
   margin-bottom: 30px;
 }
@@ -519,36 +504,6 @@ h1.portfolio {
   display: inline-flex;
 }
 
-.social-item {
-  border: solid;
-  border: transparent;
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  background-repeat: no-repeat;
-  background-color: rgba(255, 255, 255, 0.1);
-  fill: var(--primary-white-color);
-  background-size: cover;
-  margin-right: 10px;
-  background-position: center;
-  padding: 12.54px;
-}
-
-.teammate-social li:hover,
-.social-item:hover {
-  background-color: var(--primary-effect-color);
-  fill: var(--primary-white-color);
-}
-
-.social-item:last-child {
-  margin-right: 0px;
-}
-
-.social-item a {
-  display: flex;
-  text-decoration: none;
-}
-
 .client-name {
   margin-right: 30px;
 }
@@ -612,4 +567,44 @@ h1.portfolio {
   padding-bottom: 22.56px;
   padding-left: 41px;
   padding-right: 40.52px;
+}
+
+/* переделать соц иконки */
+.icon-item,
+.social-item {
+  display: inline-flex;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 50%;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon-item:last-child,
+.social-item:last-child {
+  margin-right: 0px;
+}
+.social-item:hover {
+  background-color: var(--primary-effect-color);
+}
+.icon-social {
+  fill: var(--primary-white-color);
+}
+
+.icon-teammate {
+  fill: var(--primary-clients-color);
+  background-size: cover;
+}
+
+.icon-teammate:hover {
+  fill: var(--primary-white-color);
+  background-color: var(--primary-effect-color);
+  background-size: cover;
+}
+.icon-item:hover {
+  cursor: pointer;
+  background-color: var(--primary-effect-color);
 }
