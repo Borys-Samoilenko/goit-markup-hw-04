@@ -603,11 +603,11 @@ h1.portfolio {
   fill: var(--primary-white-color);
 }
 
-li .icon-teammate svg {
+.icon-teammate {
   fill: var(--primary-clients-color);
   cursor: pointer;
 }
-li .icon-teammate svg:hover {
+.icon-teammate:hover {
   background-color: var(--primary-effect-color);
   fill: var(--primary-white-color);
 }
