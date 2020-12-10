@@ -595,11 +595,11 @@ h1.portfolio {
   fill: var(--primary-white-color);
 }
 
-.icon-teammate:hover {
+/* .icon-teammate:hover {
   fill: var(--primary-white-color);
   background-color: var(--primary-effect-color);
   background-size: cover;
-}
+} */
 .icon-item:hover {
   background-color: var(--primary-effect-color);
 }
