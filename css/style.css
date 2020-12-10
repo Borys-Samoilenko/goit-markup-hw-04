@@ -602,3 +602,12 @@ h1.portfolio {
   background-color: var(--primary-effect-color);
   fill: var(--primary-white-color);
 }
+
+li .icon-teammate svg {
+  fill: var(--primary-clients-color);
+  cursor: pointer;
+}
+li .icon-teammate svg:hover {
+  background-color: var(--primary-effect-color);
+  fill: var(--primary-white-color);
+}
