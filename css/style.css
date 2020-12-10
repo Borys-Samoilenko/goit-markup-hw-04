@@ -582,6 +582,7 @@ h1.portfolio {
   height: 44px;
   margin-right: 10px;
   background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--primary-clients-color);
 }
 
 .icon-item:last-child,
@@ -595,29 +596,7 @@ h1.portfolio {
   fill: var(--primary-white-color);
 }
 
-/* .icon-teammate:hover {
-  fill: var(--primary-white-color);
-  background-color: var(--primary-effect-color);
-  background-size: cover;
-} */
 .icon-item:hover {
   background-color: var(--primary-effect-color);
-}
-.icon-item {
-  width: 44px;
-  height: 44px;
-  box-sizing: border-box;
-  border: 1px solid transparent;
-  border-radius: 50%;
-  display: inline-flex;
-  margin-right: 10px;
-  fill: var(--primary-clients-color);
-  padding: 12px;
-  cursor: pointer;
-  margin-bottom: 30px;
-}
-
-.icon-item:hover {
   fill: var(--primary-white-color);
-  background-color: var(--primary-effect-color);
 }
