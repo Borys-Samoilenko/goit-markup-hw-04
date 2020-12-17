@@ -418,6 +418,7 @@ p.mailadress {
   width: 1600px;
   height: 80px;
   margin: auto;
+  border-bottom: 1px solid #ececec;
 }
 .conteiner {
   margin-left: auto;
@@ -433,9 +434,7 @@ p.mailadress {
 h1.portfolio {
   display: none;
 }
-.page-header .conteiner {
-  border-bottom: 1px solid #ececec;
-}
+
 section.portfolio {
   width: 1600px;
   margin-left: auto;
