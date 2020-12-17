@@ -36,9 +36,6 @@
   text-transform: capitalize;
 }
 
-.s {
-  text-transform: uppercase;
-}
 .logostudioblack {
   color: var(--primary-black-color);
 }
@@ -79,11 +76,8 @@ a {
 .nav {
   display: flex;
   margin-left: 93px;
+  width: max-content;
 }
-
-/* .nav .item:not(:last-child) {
-  margin-right: 50px;
-} */
 
 .nav .item + .item {
   margin-left: 50px;
@@ -95,11 +89,13 @@ a {
   text-transform: capitalize;
   padding-top: 32px;
   padding-bottom: 32px;
+  /* width: 294px; */
 }
 
 .contact-us {
   display: flex;
-  justify-content: right;
+  width: max-content;
+  margin-left: 305px;
 }
 
 .contact-us .item + .item {
@@ -110,6 +106,10 @@ a {
 }
 
 .contact-us .link {
+  display: flex;
+  margin-right: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--primary-text-color);
   fill: var(--primary-text-color);
 }
@@ -121,7 +121,9 @@ a {
   color: var(--primary-effect-color);
   fill: var(--primary-effect-color);
 }
-
+.icon-envelope svg {
+  margin-top: 2px;
+}
 .icon-envelope svg,
 .icon-smartphone svg {
   margin-right: 10px;
@@ -411,7 +413,9 @@ p.mailadress {
 /* hw3 */
 .page-header {
   background-color: var(--primary-white-color);
-  padding: 24px 0 25px;
+  width: 1600px;
+  height: 80px;
+  margin: auto;
 }
 .conteiner {
   margin-left: auto;
@@ -513,101 +517,72 @@ h1.portfolio {
   margin-right: 0px;
 }
 
-.icon-client {
-  fill: var(--primary-clients-color);
+.client-name a {
   box-sizing: border-box;
+  display: flex;
+  border: 1px solid var(--primary-clients-color);
   width: 170px;
   height: 90px;
-  border: 1px solid var(--primary-clients-color);
   border-radius: 4px;
+  fill: var(--primary-clients-color);
+  align-items: center;
+  justify-content: center;
 }
-
-.icon-client:hover {
+/* переделанные иконки и клиенты */
+.client-name a:hover,
+.client-name a:focus {
   fill: var(--primary-effect-color);
   border: 1px solid var(--primary-effect-color);
   border-radius: 4px;
 }
 
-.client1 {
-  padding-top: 20px;
-  padding-bottom: 20.77px;
-  padding-left: 63px;
-  padding-right: 62.73px;
-}
-
-.client2 {
-  padding-top: 19px;
-  padding-bottom: 19px;
-  padding-left: 65px;
-  padding-right: 65px;
-}
-
-.client3 {
-  padding-top: 24px;
-  padding-bottom: 23.4px;
-  padding-left: 65px;
-  padding-right: 64px;
-}
-
-.client4 {
-  padding-top: 24px;
-  padding-bottom: 23.98px;
-  padding-left: 45px;
-  padding-right: 45.34px;
-}
-
-.client5 {
-  padding-top: 22px;
-  padding-bottom: 21px;
-  padding-left: 56px;
-  padding-right: 55px;
-}
-
-.client6 {
-  padding-top: 22px;
-  padding-bottom: 22.56px;
-  padding-left: 41px;
-  padding-right: 40.52px;
-}
-
-/* переделать соц иконки */
-.icon-item,
-.social-item {
+.icon-item {
+  list-style: none;
   display: inline-flex;
-  box-sizing: border-box;
-  border: transparent;
-  border-radius: 50%;
-  padding: 12px;
-  width: 44px;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.icon-item a {
+  list-style: none;
   height: 44px;
+  width: 44px;
+  align-items: center;
+  border-radius: 50%;
   margin-right: 10px;
-  margin-bottom: 30px;
-  background-color: rgba(255, 255, 255, 0.1);
-  fill: var(--primary-clients-color);
-  cursor: pointer;
-}
-
-.icon-item:last-child,
-.social-item:last-child {
-  margin-right: 0px;
-}
-.social-item:hover {
-  background-color: var(--primary-effect-color);
-}
-.icon-social {
-  fill: var(--primary-white-color);
-}
-
-.icon-item:hover {
-  background-color: var(--primary-effect-color);
-  fill: var(--primary-white-color);
+  color: var(--primary-clients-color);
+  padding: 12px;
 }
 
 .icon-teammate {
-  fill: var(--primary-clients-color);
-  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  fill: currentColor;
 }
-.icon-teammate:hover {
+.teammate-social a:focus,
+.social-list a:focus,
+.teammate-social a:hover,
+.social-list a:hover {
+  color: var(--primary-white-color);
   background-color: var(--primary-effect-color);
+}
+
+.social-item a {
+  display: flex;
+  height: 44px;
+  width: 44px;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 10px;
+  color: var(--primary-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon-social {
+  height: 20px;
+  width: 20px;
+  margin-left: auto;
+  margin-right: auto;
   fill: var(--primary-white-color);
 }
